@@ -2,8 +2,6 @@
 
 ## Как запустить
 
-Перейти в папку [sharding-repl-cache](sharding-repl-cache)
-
 Запускаем mongodb и приложение
 
 ```shell
