@@ -94,13 +94,17 @@ Shard key: user_id
 ## Команды настройки MongoDB
 
 // Включение шардирования для базы данных
+
 sh.enableSharding("mobile_world");
 
 // Шардирование коллекции orders по geo (range-based)
+
 sh.shardCollection("mobile_world.orders", { "geo": 1 });
 
 // Шардирование коллекции products по category (range-based)  
+
 sh.shardCollection("mobile_world.products", { "category": 1 });
 
 // Шардирование коллекции carts по user_id (hash-based)
+
 sh.shardCollection("mobile_world.carts", { "user_id": "hashed" });
